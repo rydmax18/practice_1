@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+  display: inline-block;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+
+}
+/* ------------------------------ */
+
+.wrapper {
+	padding: 20px;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.header__title,
+.footer__title {
+  background-color: #3b007e;
+  color: #7fffd4;
+  text-align: center;
+  font-size: 50px;
+  padding: 20px 0;
+  font-weight: 900;
+  letter-spacing: 3px;
+  border: 1px solid #7fffd4;
+}
+
+.car {
+  padding: 50px 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F5F5F5;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4b4b4b;
+}
+
+.about {
+  background-color: #fff;
+  background-image: url('../img/gears.svg');
+  background-repeat: no-repeat;
+  background-size: 642px;
+  background-position: right top;
+  padding: 0px 87px;
+  margin-bottom: 200px;
+}
+
+.about__inner {
+  transform: translateY(100px);
+}
+
+.about__subtitle {
+  padding-left: 33px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 12px;
+  line-height: 2;
+  font-weight: 700;
+  margin-bottom: 33px;
+  position: relative;
+}
+
+.about__subtitle::before {
+  content: url('../img/car_about_list.svg');
+  position: absolute;
+  left: 0;
+}
+
+.about__title {
+  color: #02133C;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 900;
+  margin-bottom: 36px;
+  max-width: 583px;
+}
+
+.about__text {
+  letter-spacing: 0.15px;
+  margin-bottom: 54px;
+}
+
+.about__img {
+  max-width: 846px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cards__item {
+  background-color: #fff;
+  filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+  margin-bottom: 30px;
+  max-width: 324px;
+  width: 100%;
+  padding: 50px 44px 50px 43px;
+  text-align: center;
+}
+
+.cards__title {
+  padding-top: 96px;
+  font-size: 19px;
+  line-height: 1.4;
+  color: #02133C;
+  font-weight: 900;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.cards__title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cards__title--icon1::before {
+  content: url('../img/cards/card-icon.svg');
+}
+
+.cards__title--icon2::before {
+  content: url('../img/cards/card-icon-2.svg');
+}
+
+.tech {
+  max-width: 1039px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000;
+  padding: 50px 0;
+  font-weight: 600;
+}
+
+.tech__title {
+  font-size: 32px;
+  line-height: 1.5;
+
+  margin-bottom: 26px;
+}
+
+.tech__subtitle {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 19px;
+}
+
+.tech__content {
+  padding: 20px 0;
+}
+
+.tech__content-title {
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.tech__text{
+  margin-bottom: 30px;
+}
+
+.tech__text p{
+  font-weight: 300;
+}
+
+.tech__text p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.tech__list {
+  margin-bottom: 30px;
+}
+
+.tech__list-item {
+  font-weight: 300;
+}
+
+.tech-card {
+  margin-top: 50px;
+  padding: 50px;
+  max-width: 550px;
+  box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24);
+}
+
+.tech-card__title {
+  padding-top: 59px;
+  font-size: 44px;
+  line-height: 1.3;
+  font-weight: 500;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.tech-card__title::before {
+  content: url('../img/star.svg');
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tech-card__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.4;
+  max-width: 436px;
+}
